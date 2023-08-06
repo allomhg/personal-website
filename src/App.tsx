@@ -4,6 +4,7 @@ import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Navbar } from './components/Navbar';
 import { Greeting } from './components/Greeting';
+import { FooterBar } from './components/FooterBar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Greeting />
+      <FooterBar />
     </>
   )
 }

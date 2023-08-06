@@ -22,7 +22,7 @@ export const Navbar = () => {
     
     
     return (
-            <AppBar position='fixed'>
+            <AppBar position='sticky'>
                 <Container maxWidth='xl'>
                     <Toolbar disableGutters>
                         {/* START OF LOGO/TEXT WHEN NOT IN xs MODE */} 
