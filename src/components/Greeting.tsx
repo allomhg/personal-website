@@ -1,6 +1,5 @@
 import { Container, Box } from "@mui/material";
 import Typography from '@mui/material/Typography';
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const greeting = {
     greet: "Hello I'm Harry",
@@ -13,7 +12,7 @@ export const Greeting = () => {
                 display: 'flex', 
                 flexDirection: { xs: 'column-reverse', md: 'row' },
                 bgcolor: 'blue', 
-                height: '70vh', 
+                height: '100vh', 
                 }}
             >
             <Box sx={{ 
