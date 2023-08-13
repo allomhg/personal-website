@@ -6,27 +6,38 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Home', 'Projects', 'About Me'];
+import { useNavigate } from 'react-router-dom';
+
+const pages = ['Home', 'Projects', 'About'];
 
 export const Navbar = () => {   
+    let navigate = useNavigate();
+    
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
-        console.log('This works');
     };
 
-    const handleCloseNavMenu = () => {
+    const handleCloseNavMenu = (routePath?: string) => {
         setAnchorElNav(null);
+        
+        if (routePath !== undefined) {
+            navigate(routePath);
+        }
     };
     
-    
     return (
-            <AppBar position='fixed'>
+            <AppBar position='sticky'>
                 <Container maxWidth='xl'>
                     <Toolbar disableGutters>
                         {/* START OF LOGO/TEXT WHEN NOT IN xs MODE */} 
-                        <AdbIcon  sx={{ display: { xs: 'none', md: 'flex'}, mr: 1 }}/>
+                        <AdbIcon  
+                            sx={{ 
+                                display: { xs: 'none', md: 'flex'}, 
+                                mr: 1 
+                            }}
+                        />
                         <Typography
                             variant='h6'
                             noWrap
@@ -71,13 +82,13 @@ export const Navbar = () => {
                                 horizontal: 'left',
                             }}
                             open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
+                            onClose={ () => handleCloseNavMenu() }
                             sx={{
                                 display: { xs: 'block', md: 'none'}
                             }}
                             >
                                 {pages.map( (page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                    <MenuItem key={page} onClick={ () => handleCloseNavMenu(page) }>
                                         <Typography textAlign='center'>{page}</Typography>
                                     </MenuItem>
                                 ))}
@@ -112,7 +123,7 @@ export const Navbar = () => {
                             {pages.map( (page) => (
                                 <Button
                                     key={page}
-                                    onClick={handleCloseNavMenu}
+                                    onClick={ () => handleCloseNavMenu(page) }
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
                                     {page}

@@ -1,16 +1,27 @@
-import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
-import CssBaseline from '@mui/material/CssBaseline';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Home } from './pages/Home';
+import { Projects } from './pages/Projects';
+import { About } from './pages/About';
 import { Navbar } from './components/Navbar';
-import { Greeting } from './components/Greeting';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <CssBaseline />
-      <Navbar />
-      <Greeting />
+      <Router>
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path='/Home' element={ <Home /> } />
+            <Route path='/Projects' element={ <Projects /> } />
+            <Route path='/About' element={ <About /> } />
+          </Routes>
+        </main>
+        </Router>
+        
     </>
   )
 }
