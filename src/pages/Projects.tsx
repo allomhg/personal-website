@@ -1,16 +1,24 @@
-import { FooterBar } from "../components/FooterBar";
-import { Greeting } from "../components/Greeting";
-import { Navbar } from "../components/Navbar";
-
-/* 
-    CODE SHOULDN'T BE REPEATED
-    NEED TO FIND A WAY TO PASS COMPONENTS TO A NEW PAGE?
-*/
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { ProjectCard } from "../components/ProjectCard";
 
 export const Projects = () => {
     return (
-        <>
-            <h1>TEST</h1>
-        </>
+                <Grid 
+                    container 
+                    direction="row"
+                    alignItems="center"
+                    justifyContent="center"
+                    spacing={{ xs: 2, md: 4 }} 
+                    sx={{ background: "red" }}
+                >
+                    <Grid xs={12} md={6} alignSelf="center" sx={{ background: "green" }}>
+                        <ProjectCard />
+                    </Grid>
+                    <Grid xs={12} md={6}>
+                        <ProjectCard />
+                    </Grid>
+                </Grid>
     );
 }

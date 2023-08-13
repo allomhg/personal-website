@@ -1,4 +1,4 @@
-import { Container, Box, Paper } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import Typography from '@mui/material/Typography';
 import Link from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";

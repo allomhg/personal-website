@@ -1,16 +1,9 @@
-import { FooterBar } from "../components/FooterBar";
-import { Greeting } from "../components/Greeting";
-import { Navbar } from "../components/Navbar";
-
-/* 
-    CODE SHOULDN'T BE REPEATED
-    NEED TO FIND A WAY TO PASS COMPONENTS TO A NEW PAGE?
-*/
+import { Container, Typography } from "@mui/material";
 
 export const About = () => {
     return (
-        <>
-            <h1>ALSO TEST</h1>
-        </>
+        <Container fixed sx={{ display: 'flex', height: '100vh' }}>
+            <Typography sx={{ m: 'auto' }}>This is my about me page</Typography>
+        </Container>
     );
 }
