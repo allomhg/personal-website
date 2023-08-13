@@ -4,34 +4,40 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const greeting = {
     greet: "Hello I'm Harry",
-    description: "I'm currently a professional Mechanical/CAD Engineer, and aspiring web developer.",
-
+    description: "I'm currently a professional Mechanical/CAD Engineer, and a aspiring web developer",
 } 
 
 export const Greeting = () => {
     return(
-        <Container fixed maxWidth='xl' sx={{ bgcolor: 'blue', height: '80vh', pt: 10 }}>
-            <Grid2 container>  
-                <Grid2 sx={{ bgcolor: 'maroon' }}>
-                    <Box sx={{ bgcolor: 'red', m: 'auto' }}>  
-                        <Typography
-                            variant='h2'
-                        >
-                            {greeting.greet}
-                        </Typography>
-                        <Typography
-                            variant='h6'
-                        >
-                            {greeting.description}
-                        </Typography>
-                    </Box>
-                </Grid2>
-                <Grid2 sx={{ bgcolor: 'maroon' }}>
-                    <Box sx={{ bgcolor: 'orange', m: 'auto' }}>
-                        <p>WHAT</p>
-                    </Box>
-                </Grid2>
-            </Grid2>
+        <Container fixed maxWidth='xl' sx={{ 
+                display: 'flex', 
+                flexDirection: { xs: 'column-reverse', md: 'row' },
+                bgcolor: 'blue', 
+                height: '70vh', 
+                }}
+            >
+            <Box sx={{ 
+                bgcolor: 'red', 
+                m: 'auto' 
+                }}>  
+                <Typography variant='h2'>
+                    {greeting.greet}
+                </Typography>
+
+                <Typography variant='h6'>
+                    {greeting.description}
+                </Typography>
+            </Box>
+
+            <Box 
+                component='img'
+                sx={{ 
+                    height: 233,
+                    width: 350,
+                    bgcolor: 'orange', 
+                    m: 'auto' 
+                    }}
+            />
         </Container>
     );
 }

@@ -6,6 +6,8 @@ import { Projects } from './pages/Projects';
 import { About } from './pages/About';
 import { Navbar } from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { NavTabs } from './components/NavTabs';
+import { FooterBar } from './components/FooterBar';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <CssBaseline />
       <Router>
         <Navbar />
+        <NavTabs />
         <main>
           <Routes>
             <Route path='/Home' element={ <Home /> } />
@@ -20,8 +23,8 @@ function App() {
             <Route path='/About' element={ <About /> } />
           </Routes>
         </main>
-        </Router>
-        
+        <FooterBar />  
+      </Router>
     </>
   )
 }
