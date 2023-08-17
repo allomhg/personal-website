@@ -6,10 +6,10 @@ import { Typography } from "@mui/material";
 
 export const Projects = () => {
     return (   
-        <Box sx={{ display: "flex", flexGrow: 1, m: "auto", height: "100vh" }}>
-            <Box>
-                <Typography variant="h5">
-
+        <Box sx={{ mt: 5, height: "100vh", background: "green" }}>
+            <Box  pt={10} bgcolor={"red"} >
+                <Typography variant="h5" >
+                    A collection of projects and work complete learning web development.
                 </Typography>
             </Box>
             
