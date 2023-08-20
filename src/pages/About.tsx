@@ -6,23 +6,32 @@ export const About = () => {
         <Container maxWidth="lg" sx={{ 
                 display: "flex", 
                 flexDirection: "column",
-                bgcolor: "red",
+                // bgcolor: "red",
                 pt: 10,
                 // height: '100vh' 
             }}
         >
             <Box 
-                maxWidth="sm"
                 component='img'
+                alignSelf="center"
                 sx={{ 
+                    display: "flex",
+                    height: "auto",
                     bgcolor: "orange", 
                     borderRadius: "16px",
-                    m: "auto",
+                    maxWidth: "50%",
                     }}
                 src="https://source.unsplash.com/random?wallpapers"
                 alt="greeting image"
             />
-            <Typography sx={{ m: "auto" }}>This is my about me page</Typography>
+            <Typography 
+                color="text.primary"
+                variant="h6"
+                component="p"
+                align="center"
+            >
+                    This is my about me page
+            </Typography>
         </Container>
     );
 }
