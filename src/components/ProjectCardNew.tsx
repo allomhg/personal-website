@@ -8,16 +8,15 @@ import Typography from '@mui/material/Typography';
 
 export const ProjectCardNew = () => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
             <CardMedia 
                 component="img"
                 alt="project image"
-                height="140"
-                image=""
+                image="https://source.unsplash.com/random?wallpapers"
             />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Project One
+            <CardContent sx={{ flexGrow: 1 }}>
+                <Typography gutterBottom variant="h5" component="h3" color="text.primary">
+                    Project Heading
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     This is the project description for my project.
@@ -28,7 +27,6 @@ export const ProjectCardNew = () => {
             <CardActions>
                 <Button size="small">Learn More</Button>
             </CardActions>
-
         </Card>
     );
 }

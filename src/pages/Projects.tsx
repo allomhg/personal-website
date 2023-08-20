@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 
 export const Projects = () => {
 
-    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const cards = [1, 2];
 
     return (   
         <main>
@@ -33,12 +33,12 @@ export const Projects = () => {
                 </Container>
             </Box>
             {/* End hero section */}
-            {/* Card section */}
+            {/* Card section */} 
             <Container sx={{ py: 8, maxWidth: "md" }}>
                 <Grid container spacing={4}>
                     {cards.map((card) => (
-                        <Grid key={card} xs={12} sm={6} md={4}>
-                            <ProjectCard />
+                        <Grid key={card} xs={12} sm={6}>
+                            {/* <ProjectCard /> */}
                             <ProjectCardNew />
                         </Grid>
                     ))}

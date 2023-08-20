@@ -7,7 +7,7 @@ import { About } from './pages/About';
 // import { Navbar } from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavTabs } from './components/NavTabs';
-import { FooterBar } from './components/FooterBar';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Route path='/Projects' element={ <Projects /> } />
             <Route path='/About' element={ <About /> } />
           </Routes>
-        <FooterBar />  
+        <Footer />  
       </Router>
     </>
   )
