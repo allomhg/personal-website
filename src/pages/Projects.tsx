@@ -1,7 +1,7 @@
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import { ProjectCard } from "../components/ProjectCard";
+// import { ProjectCard } from "../components/ProjectCard";
 import { ProjectCardNew } from "../components/ProjectCardNew";
 import { Typography } from "@mui/material";
 
