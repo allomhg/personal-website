@@ -13,7 +13,7 @@ const socials = [
     {title: 'Email', icon: <ContactMailIcon/> , url: ''},
 ]
 
-export const FooterBar = () => {
+export const Footer = () => {
     return (
         <Container component='footer' sx={{ position: 'fixed', width: '100%', bottom: 0 }}>
             <Box>  

@@ -15,11 +15,11 @@ export const Greeting = () => {
                 }}
             >
             <Box sx={{ m: 'auto' }}>  
-                <Typography variant='h2'>
+                <Typography variant='h2' color="text.primary">
                     {greeting.greet}
                 </Typography>
 
-                <Typography variant='h6'>
+                <Typography variant='h6' color="text.secondary">
                     {greeting.description}
                 </Typography>
             </Box>
@@ -27,11 +27,13 @@ export const Greeting = () => {
             <Box 
                 component='img'
                 sx={{ 
-                    height: 233,
-                    width: 350,
+                    height: 216,
+                    width: 384,
                     bgcolor: 'orange', 
                     m: 'auto' 
                     }}
+                src="https://source.unsplash.com/random?wallpapers"
+                alt="greeting image"
             />
         </Container>
     );
