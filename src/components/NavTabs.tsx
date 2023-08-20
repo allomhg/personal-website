@@ -41,7 +41,7 @@ export const NavTabs = () => {
     }
 
     return (
-        <Box sx={{ position: 'fixed', width: '100%' }}>
+        <Box sx={{ position: 'fixed', width: '100%', bgcolor: "background.paper" }}>
             <Tabs value={value} onChange={handleChange} aria-label='nav tabs'>
                 {pages.map( ( page ) => (
                     <LinkTab 
