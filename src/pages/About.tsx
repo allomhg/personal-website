@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import { Container, Typography } from "@mui/material";
+import { AboutContent } from "../components/AboutContent";
 
 export const About = () => {
     return (
@@ -20,6 +21,7 @@ export const About = () => {
                     bgcolor: "orange", 
                     borderRadius: "16px",
                     maxWidth: "50%",
+                    my: 5
                     }}
                 src="https://source.unsplash.com/random?wallpapers"
                 alt="greeting image"
@@ -28,10 +30,15 @@ export const About = () => {
                 color="text.primary"
                 variant="h6"
                 component="p"
-                align="center"
+                justifySelf="left"
             >
-                    This is my about me page
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in est at turpis porta pulvinar. 
+                    Curabitur quis dui sed lacus bibendum lobortis. In nec lorem sed dui faucibus porta. 
+                    Donec vitae scelerisque arcu. In volutpat consectetur purus quis porttitor. 
+                    Suspendisse egestas luctus facilisis. Vivamus dictum ac nibh et elementum. In quis volutpat tortor. 
+                    Suspendisse ligula quam, luctus vel velit quis, feugiat venenatis felis. Aliquam nec venenatis sapien.
             </Typography>
+            <AboutContent/>
         </Container>
     );
 }
