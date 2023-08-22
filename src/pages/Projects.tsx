@@ -17,7 +17,7 @@ export const Projects = () => {
                     pb: 6 
                 }}
             >
-                <Container maxWidth="sm" >
+                <Container maxWidth="sm" sx={{ mt: 5 }} >
                     <Typography
                         component="h1"
                         variant="h2"
@@ -34,7 +34,7 @@ export const Projects = () => {
             </Box>
             {/* End hero section */}
             {/* Card section */} 
-            <Container sx={{ py: 8, maxWidth: "md" }}>
+            <Container sx={{ mb: 10, maxWidth: "md" }}>
                 <Grid container spacing={4}>
                     {cards.map((card) => (
                         <Grid key={card} xs={12} sm={6}>
