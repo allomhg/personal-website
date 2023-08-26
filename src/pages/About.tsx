@@ -24,9 +24,10 @@ export const About = () => {
         {date: "11-2015 - 03-2016", jobTitle: "Electronic Technician Assistant", place: "SI Lodec"},
     ]
 
-    const certificates = [
-        {date: "08-2023", title: "", place: ""},
-        {date: "05-2023", title: "", place: ""},
+    const education = [
+        
+        {date: "2014 - 2017", title: "Bachelor of Engineering (Honours), Majoring in Mechatronics", place: "Massey University"},
+        {date: "08-2023", title: "Certified SolidWorks Professional", place: ""},
         {date: "02-2023", title: "", place: ""},
     ]
 
