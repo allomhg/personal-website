@@ -2,7 +2,13 @@ import * as React from 'react';
 import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
 
-export const AboutContent = () => {
+type JobProps = {
+    date: string;
+    jobTitle: string;
+    place: string;
+}
+
+export const AboutContent: React.FunctionComponent<JobProps> = ({ date, jobTitle, place }) => {
     return (
         <>
             <Box sx={{ my: 5 }}>
@@ -10,7 +16,7 @@ export const AboutContent = () => {
                     Experience
                 </Typography>
                 <Typography>
-                    
+                    {jobTitle}
                 </Typography>
             </Box>
         </>

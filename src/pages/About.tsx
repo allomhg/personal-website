@@ -3,13 +3,13 @@ import { Container, Typography } from "@mui/material";
 import { AboutContent } from "../components/AboutContent";
 import { AboutImage } from "../components/AboutImage";
 
-interface Job {
-    date: string;
-    jobTitle: string;
-    place: string;
-}
+// interface Job {
+//     date: string;
+//     jobTitle: string;
+//     place: string;
+// }
 
-const experience: Job[] = [
+const experience = [
     {date: "12-2022 - present", jobTitle: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
     {date: "12-2017 - 05-2022", jobTitle: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
     {date: "11-2016 - 03-2017", jobTitle: "Design Assistant", place: "Patchell Industries Ltd."},
@@ -33,7 +33,7 @@ const freeCodeCamp = [
 // Such as certification, education, work experience, etc.
 // I need to pass information from these areas into the component using map (or something similar?)
 
-export const About = (experience: Job[]) => {
+export const About = () => {
     return (
         <Container maxWidth="lg" sx={{ 
                 display: "flex", 
@@ -46,10 +46,12 @@ export const About = (experience: Job[]) => {
                 {experience.map( (job) => (
                     <AboutContent
                         date={job.date}
+                        jobTitle={job.jobTitle}
+                        place={job.place}
                     />
                 ))}
             </Box>
-            <AboutContent/>
+            {/* <AboutContent/> */}
         </Container>
     );
 }
