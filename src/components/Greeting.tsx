@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 
 const greeting = {
     greet: "Hello, I'm Harry",
-    description: "I'm currently a professional Mechanical/CAD Engineer, and a aspiring web developer",
+    description: "I'm currently a professional Mechanical/CAD Engineer, and a aspiring web developer. This website is a work in progress.",
 } 
 
 export const Greeting = () => {
@@ -14,7 +14,7 @@ export const Greeting = () => {
                 height: '100vh', 
                 }}
             >
-            <Box sx={{ m: 'auto' }}>  
+            <Box maxWidth="sm" sx={{ m: 'auto' }}>  
                 <Typography variant='h2' color="text.primary">
                     {greeting.greet}
                 </Typography>

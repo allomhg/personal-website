@@ -28,7 +28,7 @@ export const Projects = () => {
                         Personal Projects
                     </Typography>
                     <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                        A collection of my personal projects and work from learning web developement.
+                        A collection of my personal projects and work from learning web developement
                     </Typography>   
                 </Container>
             </Box>
