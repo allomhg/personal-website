@@ -16,7 +16,7 @@ type AboutProps = {
                     <Typography color="text.primary" variant='h4' component="h2">
                         {title}
                     </Typography>
-                    <Box>
+                    <Box component="ul">
                         {aboutContent.map((content) => (
                             <AboutList
                                 date={content.date}
