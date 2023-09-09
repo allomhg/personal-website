@@ -3,13 +3,10 @@ import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
 
 type ListProps = {
-    date: string;
-    title: string;
-    place: string;
-    link?: string;
+    contentList: [];
 }
 
-    export const AboutList: React.FunctionComponent<ListProps> = ({ date, title, place, link }) => {
+    export const AboutList: React.FunctionComponent<ListProps> = ({ contentList }) => {
         return (
             <>
                 <Box sx={{ my: 5 }}>

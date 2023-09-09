@@ -3,36 +3,19 @@ import { Container, Typography } from "@mui/material";
 import { AboutContent } from "../components/AboutContent";
 import { AboutImage } from "../components/AboutImage";
 
-// interface Job {
-//     date: string;
-//     jobTitle: string;
-//     place: string;
-// }
+export interface SectionContent {
+        date: string;
+        title: string;
+        place: string;
+        link?: string;
+}
 
-const titles = ["Experience", "Education", "Certifications"]
+export type ContentList = {
+    title: string;
+    contentArr: SectionContent[];
+}
 
-const contentList = [
-    [
-        {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
-        {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
-        {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd."},
-        {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec"}
-    ],
-    [
-        {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
-        {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
-        {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd."},
-        {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec"}
-    ],
-    [
-        {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
-        {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
-        {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd."},
-        {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec"}
-    ],
-]
-
-const experience = [
+const experience: SectionContent[] = [
     {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
     {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
     {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd."},
@@ -40,18 +23,33 @@ const experience = [
     {date: "03-2014 - 11-2017", title: "Bachelor of Engineering (Honours), Majoring in Mechatronics", place: "Massey University"},
 ]
 
-const webCertificates = [
+const webCertificates: SectionContent[] = [
+    {date: "08-2023", title: "JavaScript Algorithms and Data Structures", place: "freeCodeCamp", link: "https://www.freecodecamp.org/certification/allomhg/javascript-algorithms-and-data-structures"},
     {date: "05-2023", title: "Responsive Web Design Certification", place: "freeCodeCamp", link: "https://www.freecodecamp.org/certification/allomhg/responsive-web-design"},
-    {date: "08-2023", title: "Responsive Web Design Certification", place: "freeCodeCamp", link: "https://www.freecodecamp.org/certification/allomhg/javascript-algorithms-and-data-structures"},
+    {date: "12-2022", title: "Advanced React", place: "Coursera", link: "https://coursera.org/share/7ea675ae88c99954b1f160a552779985"},
+    {date: "11-2022", title: "Principles of UX/UI Design", place: "Coursera", link: "https://coursera.org/share/5a848528e6e77a81dcf1b7a51ad8b5ac"},
+    {date: "10-2022", title: "Version Control", place: "Coursera", link: "https://coursera.org/share/779bc4825dcb76547ac11e32162ddec0"},
+    {date: "10-2022", title: "React Basics", place: "Coursera", link: "https://coursera.org/share/4b67cc91241bb6d315b270c8ae02ddf8"},
+    {date: "10-2022", title: "HTML and CSS in depth", place: "Coursera", link: "https://coursera.org/share/da8b5177a2ac58bd0f3f3535e5f17d98"},
+    {date: "09-2022", title: "Programming with JavaScript", place: "Coursera", link: "https://coursera.org/share/8cfcb4406914513dfc3c8af3eb5efa8e"},
+    {date: "09-2022", title: "Introduction to Front-End Development", place: "Coursera", link: "https://coursera.org/share/50e07e0d1016040fdcb58c3ade79513b"},
 ]
 
-const otherCertificates = [
+const otherCertificates: SectionContent[] = [
     {date: "08-2023", title: "Certified SolidWorks Professional (CSWP)", place: "SolidWorks"},
     {date: "05-2023", title: "Certified SolidWorks Professional Advanced - Drawing Tools (CSWPA-DT)", place: "SolidWorks"},
     {date: "02-2023", title: "Certified SolidWorks Associate (CSWA)", place: "SolidWorks"},
 ]
 
+const contentList: ContentList[] = [
+    {title: "Experience", contentArr: experience},
+    {title: "Web Development Certifications", contentArr: webCertificates},
+    {title: "Other Certifications", contentArr: otherCertificates},
+]
+
 export const About = () => {
+    console.log(contentList);
+    
     return (
         <Container maxWidth="lg" sx={{ 
                 display: "flex", 
@@ -61,25 +59,13 @@ export const About = () => {
         >
             <AboutImage/>
             <Box sx={{ bgcolor: "green" }}>
-                {titles.map( (title) => (
+                {contentList.map(( content ) => (
                     <AboutContent
-                        title={title}
-                        // date={job.date}
-                        // jobTitle={job.title}
-                        // place={job.place}
+                        title={content.title}
+                        aboutContent={content.contentArr}
                     />
                 ))}
-
             </Box>
-            {/* <Box sx={{ bgcolor: "red" }}>
-                {experience.map( (job) => (
-                    <AboutContent
-                        date={job.date}
-                        jobTitle={job.title}
-                        place={job.place}
-                    />
-                ))}
-            </Box> */}
         </Container>
     );
 }
