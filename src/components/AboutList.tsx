@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
 import { SectionContent } from '../pages/About';
 
-    export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title, place }) => {
-        return (
-            <>
-                <li>{date} {title} {place}</li>
-            </>
-        );
+export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title, place }) => {
+    return (
+        <>
+            <Box component="li">{date} {title} {place}</Box>
+        </>
+    );
 }

@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import { AboutContent } from "../components/AboutContent";
 import { AboutImage } from "../components/AboutImage";
 
