@@ -1,17 +1,12 @@
 import * as React from 'react';
 import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
+import { SectionContent } from '../pages/About';
 
-type ListProps = {
-    contentList: [];
-}
-
-    export const AboutList: React.FunctionComponent<ListProps> = ({ contentList }) => {
+    export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title, place }) => {
         return (
             <>
-                <Box sx={{ my: 5 }}>
-   
-                </Box>
+                <li>{date} {title} {place}</li>
             </>
         );
 }
