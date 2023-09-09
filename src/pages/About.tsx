@@ -58,7 +58,7 @@ export const About = () => {
             }}
         >
             <AboutImage/>
-            <Box sx={{ bgcolor: "green" }}>
+            <Box>
                 {contentList.map(( content ) => (
                     <AboutContent
                         title={content.title}
