@@ -9,8 +9,8 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const socials = [
     {title: 'Github', icon: <GitHubIcon/>, url: 'https://github.com/allomhg'},
-    {title: 'LinkedIn', icon: <LinkedInIcon/>, url: 'linkedin.com/in/allomhg'},
-    {title: 'Email', icon: <ContactMailIcon/> , url: ''},
+    {title: 'LinkedIn', icon: <LinkedInIcon/>, url: 'https://linkedin.com/in/allomhg'},
+    {title: 'Email', icon: <ContactMailIcon/> , url: 'mailto:hgallom.uk@gmail.com'},
 ]
 
 export const Footer = () => {
