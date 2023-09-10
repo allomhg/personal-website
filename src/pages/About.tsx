@@ -19,7 +19,7 @@ const experience: SectionContent[] = [
     {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd."},
     {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd."},
     {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd."},
-    {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec"},
+    {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec NZ Ltd."},
     {date: "03-2014 - 11-2017", title: "Bachelor of Engineering (Honours), Majoring in Mechatronics", place: "Massey University"},
 ]
 
@@ -36,9 +36,9 @@ const webCertificates: SectionContent[] = [
 ]
 
 const otherCertificates: SectionContent[] = [
-    {date: "08-2023", title: "Certified SolidWorks Professional (CSWP)", place: "SolidWorks"},
-    {date: "05-2023", title: "Certified SolidWorks Professional Advanced - Drawing Tools (CSWPA-DT)", place: "SolidWorks"},
-    {date: "02-2023", title: "Certified SolidWorks Associate (CSWA)", place: "SolidWorks"},
+    {date: "08-2023", title: "Certified SolidWorks Professional (CSWP)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
+    {date: "05-2023", title: "Certified SolidWorks Professional Advanced - Drawing Tools (CSWPA-DT)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
+    {date: "02-2023", title: "Certified SolidWorks Associate (CSWA)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
 ]
 
 const contentList: ContentList[] = [
