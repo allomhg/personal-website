@@ -13,7 +13,7 @@ export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, about
     return (
         <>
             <Box sx={{ my: 5 }}>
-                <Typography color="text.primary" variant='h4' component="h2">
+                <Typography color="text.primary" variant='h5' component="h3">
                     {title}
                 </Typography>
                 <Box component="ul">
@@ -22,6 +22,7 @@ export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, about
                             date={content.date}
                             title={content.title}
                             place={content.place}
+                            link={content.link}
                         />
                     ))}
                 </Box>
