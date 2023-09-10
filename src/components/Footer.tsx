@@ -9,13 +9,13 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const socials = [
     {title: 'Github', icon: <GitHubIcon/>, url: 'https://github.com/allomhg'},
-    {title: 'LinkedIn', icon: <LinkedInIcon/>, url: 'linkedin.com/in/allomhg'},
-    {title: 'Email', icon: <ContactMailIcon/> , url: ''},
+    {title: 'LinkedIn', icon: <LinkedInIcon/>, url: 'https://linkedin.com/in/allomhg'},
+    {title: 'Email', icon: <ContactMailIcon/> , url: 'mailto:hgallom.uk@gmail.com'},
 ]
 
 export const Footer = () => {
     return (
-        <Container component='footer' sx={{ position: 'fixed', width: '100%', bottom: 0 }}>
+        <Container component='footer' sx={{ position: 'fixed', bottom: 0 }}>
             <Box>  
                 {socials.map( ( social ) => (   
                     <Link href={social.url}>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </Link>
                 ))}
             </Box>
-            <Typography>Made by Harry Allom</Typography>
+            <Typography color="text.secondary">Made by Harry Allom</Typography>
         </Container>
     );
 }

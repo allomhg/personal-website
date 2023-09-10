@@ -25,6 +25,7 @@ export const AboutImage = () => {
                 component="p"
                 justifySelf="left"
                 mb="1rem"
+                paragraph
             >
                 I started my web development journey in the first quarter of 2022 with freeCodeCamp while still living in New Zealand. 
                 I picked it back up in September 2022 with Coursera after traveling around Europe for 3 months and moving to the United Kingdom. 
