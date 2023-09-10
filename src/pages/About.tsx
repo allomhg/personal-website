@@ -36,9 +36,9 @@ const webCertificates: SectionContent[] = [
 ]
 
 const otherCertificates: SectionContent[] = [
-    {date: "08-2023", title: "Certified SolidWorks Professional (CSWP)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
-    {date: "05-2023", title: "Certified SolidWorks Professional Advanced - Drawing Tools (CSWPA-DT)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
-    {date: "02-2023", title: "Certified SolidWorks Associate (CSWA)", place: "SolidWorks", link: "https://3dexperience.virtualtester.com/#certvalidate"},
+    {date: "08-2023", title: "Certified SolidWorks Professional (CSWP)", place: "SolidWorks", link: "https://drive.google.com/file/d/1Bg4q3xELIYttk3FUNHuBKijN6iUehxff/view?usp=drive_link"},
+    {date: "05-2023", title: "Certified SolidWorks Professional Advanced - Drawing Tools (CSWPA-DT)", place: "SolidWorks", link: "https://drive.google.com/file/d/19t01h7U1GlKVaV3MHo8UA18IRf-eac8Y/view?usp=drive_link"},
+    {date: "02-2023", title: "Certified SolidWorks Associate (CSWA)", place: "SolidWorks", link: "https://drive.google.com/file/d/11hIr08oYlViAoW8fyHX7kBVVmRPEMGqs/view?usp=drive_link"},
 ]
 
 const contentList: ContentList[] = [

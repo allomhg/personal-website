@@ -27,7 +27,6 @@ export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title
                 >
                     {place}
                 </Typography>
-                
             </Box>
         </>
     );
