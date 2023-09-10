@@ -30,7 +30,7 @@ export const AboutImage = () => {
                 I started my web development journey in the first quarter of 2022 with freeCodeCamp while still living in New Zealand. 
                 I picked it back up in September 2022 with Coursera after traveling around Europe for 3 months and moving to the United Kingdom. 
                 Once again, I had to put it on the back burner after relocating and starting a new job in December. 
-                However, I have since picked web development back up and have been slowly but steadily building my skills in my spare time with the end goal of starting a career as a web developer.
+                However, I have since picked web development back up and have been slowly but steadily building my skills in my spare time.
             </Typography>
             <Typography 
                 color="text.primary"

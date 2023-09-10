@@ -4,7 +4,6 @@ import Link from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-// import EmailIcon from '@mui/icons-material/Email';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const socials = [
