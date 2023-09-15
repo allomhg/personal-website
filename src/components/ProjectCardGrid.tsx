@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import { ProjectCardNew } from "../components/ProjectCardNew";
