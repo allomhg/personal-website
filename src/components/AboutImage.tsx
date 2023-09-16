@@ -6,7 +6,7 @@ export const AboutImage = () => {
     return (
         <>
             <Box 
-                component='img'
+                component="img"
                 alignSelf="center"
                 sx={{ 
                     display: "flex",
