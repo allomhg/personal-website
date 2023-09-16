@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { DialogHeaderImage } from './DialogHeaderImage';
 
 // TO REMOVE ONCE FINISHED TESTING
 import Dialog, { DialogProps } from '@mui/material/Dialog';
@@ -26,10 +27,10 @@ export const ProjectCardNew = () => {
         setOpen(false);
     }
 
-    const handleOpenClose = () => {
-        console.log(!open)
-        setOpen(!open);
-    }
+    // const handleOpenClose = () => {
+    //     console.log(!open)
+    //     setOpen(!open);
+    // }
 
     const descriptionElementRef = React.useRef<HTMLElement>(null);
     
@@ -77,6 +78,7 @@ export const ProjectCardNew = () => {
             >
                 <DialogTitle id="scroll-dialog-title">Project Title</DialogTitle>
                 <DialogContent>
+                    <DialogHeaderImage /> {/* Will obivously inherit the same image sent to the card component */}
                     <DialogContentText
                         id="scroll-dialog-description"
                         ref={descriptionElementRef}
