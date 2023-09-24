@@ -61,6 +61,7 @@ export const About = () => {
             <Box pb="3rem">
                 {contentList.map(( content ) => (
                     <AboutContent
+                        key={content.title}
                         title={content.title}
                         aboutContent={content.contentArr}
                     />

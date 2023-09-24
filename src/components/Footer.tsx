@@ -17,7 +17,10 @@ export const Footer = () => {
         <Container component='footer' sx={{ position: 'fixed', bottom: 0 }}>
             <Box>  
                 {socials.map( ( social ) => (   
-                    <Link href={social.url}>
+                    <Link 
+                        key={social.title}
+                        href={social.url}
+                    >
                         <IconButton>
                             {social.icon}
                         </IconButton>
