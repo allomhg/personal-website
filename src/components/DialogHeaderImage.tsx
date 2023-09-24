@@ -11,6 +11,7 @@ export const DialogHeaderImage = () => {
                 bgcolor: "orange", 
                 // borderRadius: "16px",
                 maxWidth: "100%",
+                borderRadius: 1,
                 mb: 2
                 }}
             src="https://source.unsplash.com/random?wallpapers"

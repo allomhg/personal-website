@@ -3,16 +3,15 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import { ProjectCard } from "./ProjectCard";
 
-interface ProjectContent {
-    title: string;
+export interface ProjectContentProps {
+    projectTitle: string;
     cardImg: string;
     description: string;
 }
 
-const cards = [1, 2];
-
-const projects: ProjectContent[] = [
-    {title: "Project 1", cardImg: "", description: "" }
+const projectsArr: ProjectContentProps[] = [
+    {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." },
+    {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." }
 ]
 
 export const ProjectCardGrid = () => {
@@ -24,9 +23,13 @@ export const ProjectCardGrid = () => {
             }}
          >
             <Grid container spacing={4}>
-                {cards.map((card) => (
-                    <Grid key={card} xs={12} sm={6}>
-                        <ProjectCard />
+                {projectsArr.map((project) => (
+                    <Grid key={project.projectTitle} xs={12} sm={6}>
+                            <ProjectCard
+                                projectTitle={project.projectTitle} 
+                                cardImg={project.cardImg}
+                                description={project.description}
+                            />
                     </Grid>
                 ))}
             </Grid>

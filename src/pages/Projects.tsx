@@ -8,14 +8,14 @@ export const Projects = () => {
         <main>
             <ProjectHeader />
             <ProjectCardGrid />
-            <Typography 
+            {/* <Typography 
                 color="text.primary" 
                 variant="h4" 
                 align="center"
                 my="5rem"
             >
                 More coming soon...
-            </Typography>
+            </Typography> */}
         </main>
     );
 }
