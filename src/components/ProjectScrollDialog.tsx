@@ -31,7 +31,6 @@ export const ProjectScrollDialog: React.FunctionComponent<MyDialogProps> = ({ op
                     ref={descElementRef}
                     tabIndex={-1}
                 >
-
                     {description}
                 </DialogContentText>
             </DialogContent>

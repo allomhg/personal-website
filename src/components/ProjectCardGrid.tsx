@@ -11,7 +11,7 @@ export interface ProjectContentProps {
 
 const projectsArr: ProjectContentProps[] = [
     {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." },
-    {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." }
+    {projectTitle: "Coming soon....", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." }
 ]
 
 export const ProjectCardGrid = () => {

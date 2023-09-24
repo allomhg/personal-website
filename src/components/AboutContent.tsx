@@ -19,6 +19,7 @@ export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, about
                 <Box component="ul">
                     {aboutContent.map((content) => (
                         <AboutList
+                            key={content.title}
                             date={content.date}
                             title={content.title}
                             place={content.place}
