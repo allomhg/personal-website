@@ -48,7 +48,7 @@ const contentList: ContentList[] = [
 ]
 
 export const About = () => {
-    console.log(contentList);
+    // console.log(contentList);
     
     return (
         <Container maxWidth="lg" sx={{ 
