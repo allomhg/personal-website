@@ -6,6 +6,7 @@ import { Projects } from './pages/Projects';
 import { About } from './pages/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavTabs } from './components/NavTabs';
+import { NavTabsNew } from './components/NavTabsNew';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <>
       <CssBaseline />
       <Router>
-        <NavTabs />
+        {/* <NavTabs /> */}
+        <NavTabsNew />
           <Routes>
             <Route path="/" index element={ <Home /> } />
             <Route path='/Home' element={ <Home /> } />
