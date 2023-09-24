@@ -12,7 +12,7 @@ export const AboutImage = () => {
                     display: "flex",
                     height: "auto",
                     bgcolor: "orange", 
-                    borderRadius: "16px",
+                    borderRadius: 2,
                     maxWidth: "50%",
                     my: 5
                     }}

@@ -1,4 +1,4 @@
-import * as React from 'react';
+// import * as React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import { ProjectCard } from "./ProjectCard";
@@ -25,11 +25,11 @@ export const ProjectCardGrid = () => {
             <Grid container spacing={4}>
                 {projectsArr.map((project) => (
                     <Grid key={project.projectTitle} xs={12} sm={6}>
-                            <ProjectCard
-                                projectTitle={project.projectTitle} 
-                                cardImg={project.cardImg}
-                                description={project.description}
-                            />
+                        <ProjectCard
+                            projectTitle={project.projectTitle} 
+                            cardImg={project.cardImg}
+                            description={project.description}
+                        />
                     </Grid>
                 ))}
             </Grid>
