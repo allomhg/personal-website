@@ -1,9 +1,18 @@
-import * as React from 'react';
+// import * as React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import { ProjectCardNew } from "../components/ProjectCardNew";
+import { ProjectCard } from "./ProjectCard";
 
-const cards = [1, 2];
+export interface ProjectContentProps {
+    projectTitle: string;
+    cardImg: string;
+    description: string;
+}
+
+const projectsArr: ProjectContentProps[] = [
+    {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." },
+    {projectTitle: "Coming soon...", cardImg: "https://source.unsplash.com/random?wallpapers", description: "Information coming soon..." }
+]
 
 export const ProjectCardGrid = () => {
     return (
@@ -14,10 +23,13 @@ export const ProjectCardGrid = () => {
             }}
          >
             <Grid container spacing={4}>
-                {cards.map((card) => (
-                    <Grid key={card} xs={12} sm={6}>
-                        {/* <ProjectCard /> */}
-                        <ProjectCardNew />
+                {projectsArr.map((project) => (
+                    <Grid key={project.projectTitle} xs={12} sm={6}>
+                        <ProjectCard
+                            projectTitle={project.projectTitle} 
+                            cardImg={project.cardImg}
+                            description={project.description}
+                        />
                     </Grid>
                 ))}
             </Grid>

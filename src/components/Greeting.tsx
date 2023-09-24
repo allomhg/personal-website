@@ -30,6 +30,7 @@ export const Greeting = () => {
                     height: 216,
                     width: 384,
                     bgcolor: 'orange', 
+                    borderRadius: 2,
                     m: 'auto' 
                     }}
                 src="https://source.unsplash.com/random?wallpapers"

@@ -7,8 +7,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 import { ProjectScrollDialog } from './ProjectScrollDialog';
+import { ProjectContentProps } from './ProjectCardGrid';
 
-export const ProjectCardNew = () => {
+export const ProjectCard: React.FunctionComponent<ProjectContentProps> = ({ projectTitle, cardImg, description }) => {
     const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
@@ -36,16 +37,14 @@ export const ProjectCardNew = () => {
                 <CardMedia 
                     component="img"
                     alt="project image"
-                    image="https://source.unsplash.com/random?wallpapers"
+                    image={cardImg}
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h3" color="text.primary">
-                        Project Heading
+                        {projectTitle}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        This is the project description for my project.
-                        It will be a brief summary. Bleeeeeeeeeeeeeeep.
-                        What on earth is going on!?!?!?!?!?!?! hello
+                        {description}
                     </Typography>
                 </CardContent>
                 <CardActions>
@@ -61,6 +60,8 @@ export const ProjectCardNew = () => {
                 open={open}
                 handleClose={handleClose} 
                 descElementRef={descriptionElementRef}
+                projectTitle={projectTitle}
+                description={description}
             />
         </>
     );
