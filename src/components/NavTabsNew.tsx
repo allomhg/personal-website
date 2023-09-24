@@ -35,6 +35,13 @@ const LinkTab = (props: LinkTabProps) => {
 
 export const NavTabsNew = () => {   
     const [value, setValue] = React.useState(0);
+    let navigate = useNavigate();
+
+    const navFunc = (routePath?: string) => {
+        if ( routePath !== undefined ) {
+            navigate(routePath);
+        }
+    }
 
     useEffect(() => {
         const indexNav = window.localStorage.getItem("NAVTAB_INDEX");
@@ -53,9 +60,10 @@ export const NavTabsNew = () => {
         setValue(newValue);
     }
 
-    // const handleClick = () => {
-    //     setValue()
-    // }
+    const handleClick = (index: number) => {
+        setValue(index);
+        // event.preventDefault();
+    }
 
     return (
         <Box sx={{ position: 'fixed', width: '100%', bgcolor: "background.paper" }}>
@@ -65,6 +73,7 @@ export const NavTabsNew = () => {
                         key={page}
                         label={page} 
                         href={page} 
+
                     />
                 ))}
             </Tabs>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Tabs, Tab, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import { json } from 'stream/consumers';
 
 interface LinkTabProps {
     key?: string;
@@ -38,10 +39,15 @@ export const NavTabs = () => {
 
     useEffect(() => {
         const indexNav = window.localStorage.getItem("NAVTAB_INDEX");
+
         // if ( indexNav !== null) setValue(JSON.parse(indexNav));
         if ( indexNav !== null ) {
-            console.log(indexNav)
-            setValue(JSON.parse(indexNav));
+            const indexNum = JSON.parse(indexNav);
+            console.log(typeof indexNum);
+            // This is a pretty crude way to prevent an error from happening.
+            // I need to figure out what is causing this exactly.
+            // The useEffect hook seems to run twice and reset the tabs back to 0
+            if ( indexNum !== 0 ) setValue(JSON.parse(indexNav));
         }
     }, [])
 

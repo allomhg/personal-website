@@ -14,8 +14,8 @@ function App() {
     <>
       <CssBaseline />
       <Router>
-        {/* <NavTabs /> */}
-        <NavTabsNew />
+        <NavTabs />
+        {/* <NavTabsNew /> */}
           <Routes>
             <Route path="/" index element={ <Home /> } />
             <Route path='/Home' element={ <Home /> } />
