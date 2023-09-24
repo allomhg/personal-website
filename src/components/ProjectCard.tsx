@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import { ProjectScrollDialog } from './ProjectScrollDialog';
 
-export const ProjectCardNew = () => {
+export const ProjectCard = () => {
     const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
