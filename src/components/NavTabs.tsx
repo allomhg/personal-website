@@ -59,10 +59,6 @@ export const NavTabs = () => {
         setValue(newValue);
     }
 
-    // const handleClick = () => {
-    //     setValue()
-    // }
-
     return (
         <Box sx={{ position: 'fixed', width: '100%', bgcolor: "background.paper" }}>
             <Tabs value={value} onChange={handleChange} aria-label='nav tabs'>
