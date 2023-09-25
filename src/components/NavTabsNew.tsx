@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Tabs, Tab, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { json } from 'stream/consumers';
 
 interface LinkTabProps {
     key?: string;
@@ -34,20 +33,22 @@ const LinkTab = (props: LinkTabProps) => {
     );
 }
 
-export const NavTabs = () => {   
+export const NavTabsNew = () => {   
     const [value, setValue] = React.useState(0);
+    let navigate = useNavigate();
+
+    const navFunc = (routePath?: string) => {
+        if ( routePath !== undefined ) {
+            navigate(routePath);
+        }
+    }
 
     useEffect(() => {
         const indexNav = window.localStorage.getItem("NAVTAB_INDEX");
-
         // if ( indexNav !== null) setValue(JSON.parse(indexNav));
         if ( indexNav !== null ) {
-            const indexNum = JSON.parse(indexNav);
-            console.log(typeof indexNum);
-            // This is a pretty crude way to prevent an error from happening.
-            // I need to figure out what is causing this exactly.
-            // The useEffect hook seems to run twice and reset the tabs back to 0
-            if ( indexNum !== 0 ) setValue(JSON.parse(indexNav));
+            console.log(indexNav)
+            setValue(JSON.parse(indexNav));
         }
     }, [])
 
@@ -59,9 +60,10 @@ export const NavTabs = () => {
         setValue(newValue);
     }
 
-    // const handleClick = () => {
-    //     setValue()
-    // }
+    const handleClick = (index: number) => {
+        setValue(index);
+        // event.preventDefault();
+    }
 
     return (
         <Box sx={{ position: 'fixed', width: '100%', bgcolor: "background.paper" }}>
@@ -71,6 +73,7 @@ export const NavTabs = () => {
                         key={page}
                         label={page} 
                         href={page} 
+
                     />
                 ))}
             </Tabs>
