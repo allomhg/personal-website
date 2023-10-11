@@ -10,27 +10,30 @@ const greeting = {
 
 export const HomeNew = () => {
     return (
-        <Grid container sx={{
-            height: "100vh",
-            bgcolor: "yellow",
-        }}
-        >
-            <Grid md={6} sx={{
-                bgcolor: "green",
-                // justifyContent: "center",
-                // justifyItems: "center",
-                justifySelf: "center",
+        <Grid
+            container
+            sx={{
+                height: { sm: "100vh", xs:"100vh"},
+                width: { sm: "100vw", xs: "80vw" },
+                bgcolor: "yellow",
+                alignItems: "center",
+                maxWidth: "lg",
+                m: "auto",
             }}
+        >
+            <Grid
+                container
+                md={6}
+                sx={{
+                    // bgcolor: "green",
+                    textAlign: { sm: "center"},
+                }}
             >
                 <Box
                     maxWidth="sm"
                     sx={{
                         // position: "relative"
-                        // m: "auto",
-                        // bgcolor: "red",
-                        // flexGrow: 1,
-                        // mt: { xs: "3rem" },
-                        // mb: { xs: "5rem" },
+                        m: "auto",
                     }}
                 >
                     <Typography variant="h2" color="text.primary">
@@ -41,7 +44,14 @@ export const HomeNew = () => {
                     </Typography>
                 </Box>
             </Grid>
-            <Grid md={6} sx={{ bgcolor: "blue" }}>
+            <Grid
+                container
+                md={6}
+                sx={{
+                    // bgcolor: "blue",
+                    // alignItems: "center",
+                }}
+            >
                 <Box
                     component="img"
                     sx={{
@@ -51,7 +61,8 @@ export const HomeNew = () => {
                         bgcolor: "orange",
                         borderRadius: 2,
                         // mt: { xs: "5rem" },
-                        // m: "auto",
+                        // mx: "10px",
+                        m: "auto",
                     }}
                     src="https://source.unsplash.com/random?wallpapers"
                     alt="greeting image"
