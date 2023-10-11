@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Tabs, Tab, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { json } from 'stream/consumers';
+// import { json } from 'stream/consumers';
 
 interface LinkTabProps {
     key?: string;
@@ -58,10 +58,6 @@ export const NavTabs = () => {
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     }
-
-    // const handleClick = () => {
-    //     setValue()
-    // }
 
     return (
         <Box sx={{ position: 'fixed', width: '100%', bgcolor: "background.paper" }}>
