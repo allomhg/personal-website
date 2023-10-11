@@ -26,7 +26,7 @@ export const HomeNew = () => {
                 md={6}
                 sx={{
                     // bgcolor: "green",
-                    textAlign: { sm: "center"},
+                    textAlign: { xs: "center"},
                 }}
             >
                 <Box
@@ -56,7 +56,7 @@ export const HomeNew = () => {
                     component="img"
                     sx={{
                         maxWidth: "500px",
-                        // width: { xs: "80vw" },
+                        width: { xs: "80vw" },
                         height: "auto",
                         bgcolor: "orange",
                         borderRadius: 2,
