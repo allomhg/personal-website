@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
 
@@ -23,7 +22,6 @@ export const AboutImage = () => {
                 color="text.primary"
                 variant="h6"
                 component="p"
-                // justifySelf="center"
                 alignSelf="left"
                 mb="1rem"
                 paragraph
@@ -37,8 +35,6 @@ export const AboutImage = () => {
                 color="text.primary"
                 variant="h6"
                 component="p"
-                // justifySelf="left"
-
             >
                 I’m a motorcycle lover, who enjoys equal parts of outdoor adventures and spending time inside reading, learning or playing video games.
                 If you happen to be in the UK, feel free to reach out to me!

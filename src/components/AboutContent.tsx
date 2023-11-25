@@ -11,7 +11,7 @@ type AboutProps = {
 }
 
 export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, aboutContent }) => {
-    const isMobile = window.innerWidth <= 600;
+    // const isMobile = window.innerWidth <= 600;
 
     return (
         <>
@@ -25,11 +25,11 @@ export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, about
                 </Typography>
                 <Box>
                     {aboutContent.map((content) => (
-                        isMobile ? 
-                            // <AboutListSmall key={content.title} date={content.date} title={content.title} place={content.place} link={content.link} /> 
-                            <AboutList key={content.title} date={content.date} title={content.title} place={content.place} link={content.link}/>
-                        : 
-                            <AboutList key={content.title} date={content.date} title={content.title} place={content.place} link={content.link}/>
+                        <AboutList key={content.title} date={content.date} title={content.title} place={content.place} link={content.link}/>
+                        // isMobile ? 
+                        //     // <AboutListSmall key={content.title} date={content.date} title={content.title} place={content.place} link={content.link} /> 
+                        // : 
+                        //     <AboutList key={content.title} date={content.date} title={content.title} place={content.place} link={content.link}/>
                     ))}
                 </Box>
             </Box>

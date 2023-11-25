@@ -8,10 +8,9 @@ export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title
     return (
         <>
             <Box 
-                // component="li" 
                 sx={{ 
                     display: "flex", 
-                    flexDirection: { md: "row", sm: "column", xs: "column"}
+                    flexDirection: { md: "row", xs: "column"}
                 }}>
                 <Typography 
                     color="text.primary" 
@@ -25,7 +24,6 @@ export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title
                     component="a"
                     href={link}
                     width={"fit-content"}
-                    // bgcolor={"blue"}
                     sx={{ pr: 1.5 }}
                     
                 >
