@@ -9,33 +9,33 @@ const greeting = {
 
 export const Home = () => {
     return (
-      <Container 
-        sx={{ 
-            height: "100vh",
-            width: "80%",
-            display: "flex", 
-            flexDirection: { md: "row", xs: "column-reverse" },
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "3rem",
-        }}
+        <Container
+            sx={{
+                height: "100vh",
+                width: "80%",
+                display: "flex",
+                flexDirection: { md: "row", xs: "column-reverse" },
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "3rem",
+            }}
         >
-            <Box 
-                sx={{ 
+            <Box
+                sx={{
                     maxWidth: { md: "50%", xs: "100%" },
                 }}
-            > 
-                <Typography 
-                    variant="h2" 
-                    color="text.primary" 
+            >
+                <Typography
+                    variant="h2"
+                    color="text.primary"
                     textAlign={{ md: "start", xs: "center" }}
                 >
                     {greeting.greet}
                 </Typography>
-                <Typography 
-                    component="p" 
-                    variant="h6" 
-                    color="text.secondary" 
+                <Typography
+                    component="p"
+                    variant="h6"
+                    color="text.secondary"
                     textAlign={{ md: "start", xs: "center" }}
                 >
                     {greeting.description}
@@ -44,12 +44,12 @@ export const Home = () => {
             <Box
                 component="img"
                 sx={{
-                    width: {xs: "80%" },
+                    width: { xs: "80%" },
                     borderRadius: 2,
                 }}
                 src="https://source.unsplash.com/random?wallpapers"
                 alt="greeting image"
             />
-      </Container>
+        </Container>
     );
 };
