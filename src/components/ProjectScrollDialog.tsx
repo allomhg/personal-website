@@ -22,6 +22,7 @@ export const ProjectScrollDialog: React.FunctionComponent<MyDialogProps> = ({ op
             onClose={handleClose}
             aria-labelledby="scroll-dialog-title"
             aria-describedby="scroll-dialog-description"
+            sx={{ maxWidth: "80%", m: "auto" }}
         >
             <DialogTitle id="scroll-dialog-title">{projectTitle}</DialogTitle>
             <DialogContent>

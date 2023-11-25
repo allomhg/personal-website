@@ -2,10 +2,11 @@
 // import { Typography } from "@mui/material";
 import { ProjectHeader } from "../components/ProjectHeader";
 import { ProjectCardGrid } from "../components/ProjectCardGrid";
+import { Box, Container } from "@mui/material";
 
 export const Projects = () => {
     return (   
-        <main>
+        <Container sx={{ maxWidth: "80%" }}>
             <ProjectHeader />
             <ProjectCardGrid />
             {/* <Typography 
@@ -16,6 +17,6 @@ export const Projects = () => {
             >
                 More coming soon...
             </Typography> */}
-        </main>
+        </Container>
     );
 }

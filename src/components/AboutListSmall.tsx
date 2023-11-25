@@ -7,7 +7,7 @@ import { SectionContent } from '../pages/About';
 export const AboutListSmall: React.FunctionComponent<SectionContent> = ({ date, title, place, link }) => {
     return (
         <>
-            <Box component="li" sx={{ display: "flex", flexDirection: "row" }}>
+            <Box component="li" sx={{ display: "flex", flexDirection: "column", background: "green" }}>
                 <Typography 
                     color="text.primary" 
                     sx={{ width: 150 }}
@@ -28,10 +28,10 @@ export const AboutListSmall: React.FunctionComponent<SectionContent> = ({ date, 
                     {place}
                 </Typography>
             </Box>
-            {/* <Box>
+            <Box>
             </Box>
             <Box>
-            </Box> */}
+            </Box>
         </>
     );
 }
