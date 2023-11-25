@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
 import { AboutList } from './AboutList';
 import { SectionContent } from '../pages/About';
-import { AboutListSmall } from './AboutListSmall';
+// import { AboutListSmall } from './AboutListSmall';
 
 type AboutProps = {
     title: string;

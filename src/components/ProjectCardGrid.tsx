@@ -19,7 +19,7 @@ export const ProjectCardGrid = () => {
         <Container 
         sx={{ 
             mb: 5,
-            maxWidth: "md" 
+            // width: ""
             }}
          >
             <Grid container spacing={4}>

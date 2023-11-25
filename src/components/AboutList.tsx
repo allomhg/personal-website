@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from "@mui/material/Box";
 import Typography from '@mui/material/Typography';
-import { ListItemText } from '@mui/material';
+// import { ListItemText } from '@mui/material';
 import { SectionContent } from '../pages/About';
 
 export const AboutList: React.FunctionComponent<SectionContent> = ({ date, title, place, link }) => {
