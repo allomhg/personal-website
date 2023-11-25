@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 const greeting = {
     greet: "Hello, I'm Harry",
@@ -7,7 +8,7 @@ const greeting = {
         "I'm currently a professional Mechanical/CAD Engineer, and a aspiring web developer. This website is a work in progress.",
 };
 
-export const Home = () => {
+export const HomeNewThree = () => {
     return (
       <Container 
         sx={{ 
@@ -23,6 +24,7 @@ export const Home = () => {
             <Box 
                 sx={{ 
                     maxWidth: { md: "50%", xs: "100%" },
+                    // mt: { md: "0rem", xs: "3rem" },
                 }}
             > 
                 <Typography 
@@ -44,6 +46,8 @@ export const Home = () => {
             <Box
                 component="img"
                 sx={{
+                    // maxWidth: { md: "50%", xs: "60%" },
+                    // maxHeight: { md: "50%", xs: "60%" },
                     width: {xs: "80%" },
                     borderRadius: 2,
                 }}

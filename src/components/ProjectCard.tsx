@@ -39,7 +39,9 @@ export const ProjectCard: React.FunctionComponent<ProjectContentProps> = ({ proj
                     alt="project image"
                     image={cardImg}
                 />
-                <CardContent sx={{ flexGrow: 1 }}>
+                <CardContent 
+                    sx={{ flexGrow: 1 }}
+                >
                     <Typography gutterBottom variant="h5" component="h3" color="text.primary">
                         {projectTitle}
                     </Typography>

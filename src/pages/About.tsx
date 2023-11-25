@@ -16,11 +16,11 @@ export type ContentList = {
 }
 
 const experience: SectionContent[] = [
-    {date: "12-2022 - present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd.", link: "https://stoprust.com/"},
-    {date: "12-2017 - 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd.", link: "https://patchell.co.nz/"},
-    {date: "11-2016 - 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd.", link: "https://patchell.co.nz/"},
-    {date: "11-2015 - 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec NZ Ltd.", link: "https://www.silodec.co.nz/"},
-    {date: "03-2014 - 11-2017", title: "Bachelor of Engineering (Honours), Majoring in Mechatronics", place: "Massey University of New Zealand - Te Kunenga ki Pūrehuroa", link: "https://www.massey.ac.nz/"},
+    {date: "12-2022 to present", title: "Computer Aided Design Engineer", place: "Deepwater EU Ltd.", link: "https://stoprust.com/"},
+    {date: "12-2017 to 05-2022", title: "Mechanical Design Engineer", place: "Patchell Industries Ltd.", link: "https://patchell.co.nz/"},
+    {date: "11-2016 to 03-2017", title: "Design Assistant", place: "Patchell Industries Ltd.", link: "https://patchell.co.nz/"},
+    {date: "11-2015 to 03-2016", title: "Electronic Technician Assistant", place: "SI Lodec NZ Ltd.", link: "https://www.silodec.co.nz/"},
+    {date: "03-2014 to 11-2017", title: "Bachelor of Engineering (Honours), Majoring in Mechatronics", place: "Massey University", link: "https://www.massey.ac.nz/"},
 ]
 
 const webCertificates: SectionContent[] = [
@@ -48,17 +48,20 @@ const contentList: ContentList[] = [
 ]
 
 export const About = () => {
-    // console.log(contentList);
-    
     return (
-        <Container maxWidth="lg" sx={{ 
+        <Container 
+            sx={{ 
                 display: "flex", 
                 flexDirection: "column",
-                pt: 10,
+                width: "80%",
+                pt: "2rem",
             }}
         >
             <AboutImage/>
-            <Box pb="3rem">
+            <Box 
+                pb="3rem" 
+                // bgcolor={"red"}
+            >
                 {contentList.map(( content ) => (
                     <AboutContent
                         key={content.title}

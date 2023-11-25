@@ -13,29 +13,30 @@ export const HomeNew = () => {
         <Grid
             container
             sx={{
-                height: { sm: "100vh", xs:"100vh"},
-                width: { sm: "100vw", xs: "80vw" },
+                display: "flex",
                 bgcolor: "yellow",
+                flexDirection: { sm: "row", xs: "column-reverse" },
+                // justifySelf: "center",
+                // alignSelf: "center",
+                justifyContent: "center",
                 alignItems: "center",
                 maxWidth: "lg",
+                height: "100vh",
+                pt: "50px",
                 m: "auto",
+                // mx: "1rem"
             }}
         >
             <Grid
                 container
                 md={6}
                 sx={{
-                    // bgcolor: "green",
+                    bgcolor: "green",
                     textAlign: { xs: "center"},
+                    // mx: "10px",
                 }}
             >
-                <Box
-                    maxWidth="sm"
-                    sx={{
-                        // position: "relative"
-                        m: "auto",
-                    }}
-                >
+                <Box>
                     <Typography variant="h2" color="text.primary">
                         {greeting.greet}
                     </Typography>
@@ -48,8 +49,6 @@ export const HomeNew = () => {
                 container
                 md={6}
                 sx={{
-                    // bgcolor: "blue",
-                    // alignItems: "center",
                 }}
             >
                 <Box
@@ -60,8 +59,6 @@ export const HomeNew = () => {
                         height: "auto",
                         bgcolor: "orange",
                         borderRadius: 2,
-                        // mt: { xs: "5rem" },
-                        // mx: "10px",
                         m: "auto",
                     }}
                     src="https://source.unsplash.com/random?wallpapers"
