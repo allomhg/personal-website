@@ -14,7 +14,13 @@ const socials = [
 
 export const Footer = () => {
     return (
-        <Container component='footer' sx={{ position: 'fixed', bottom: 0 }}>
+        <Container 
+            component='footer' 
+            sx={{ 
+                position: 'fixed', 
+                bottom: 0, 
+                width: 'fit-content'
+            }}>
             <Box>  
                 {socials.map( ( social ) => (   
                     <Link 

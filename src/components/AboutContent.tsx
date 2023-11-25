@@ -9,6 +9,14 @@ type AboutProps = {
     aboutContent: SectionContent[];
 }
 
+const AboutSmallList = () => {
+    return (
+        <Box>
+            
+        </Box>
+    );
+}
+
 export const AboutContent: React.FunctionComponent<AboutProps> = ({ title, aboutContent }) => {
     return (
         <>

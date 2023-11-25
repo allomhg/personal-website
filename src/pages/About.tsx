@@ -48,8 +48,6 @@ const contentList: ContentList[] = [
 ]
 
 export const About = () => {
-    // console.log(contentList);
-    
     return (
         <Container maxWidth="lg" sx={{ 
                 display: "flex", 
@@ -58,7 +56,10 @@ export const About = () => {
             }}
         >
             <AboutImage/>
-            <Box pb="3rem">
+            <Box 
+                pb="3rem" 
+                sx={{ background: "red" }}
+            >
                 {contentList.map(( content ) => (
                     <AboutContent
                         key={content.title}
