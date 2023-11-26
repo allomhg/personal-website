@@ -27,6 +27,7 @@ const LinkTab = (props: LinkTabProps) => {
                 event.preventDefault();
                 navFunc(props.label);
             }}
+            disableRipple
             {...props}
         />
     );

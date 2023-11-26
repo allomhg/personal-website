@@ -54,6 +54,9 @@ export const ProjectCard: React.FunctionComponent<ProjectContentProps> = ({ proj
                         size="small"
                         onClick={handleClickOpen}
                         variant="contained"
+                        color="primary"
+                        disableRipple
+                        disableElevation
                     >
                         Read More
                     </Button>
