@@ -11,15 +11,14 @@ import { deepOrange } from "@mui/material/colors";
 import "./App.css";
 
 function App() {
- 
   const theme = createTheme({
-    typography: {
-      fontFamily: [
-        "Works Sans",
-        "sans-serif",
-      ],
+    // typography: {
+    //   fontFamily: [
+    //     "Works Sans",
+    //     "sans-serif",
+    //   ],
 
-    },
+    // },
 
     palette: {
       background: {

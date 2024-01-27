@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: radial-gradient(at 0% 0%, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+  /* background: radial-gradient(at 0% 0%, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)); */
   /* background: linear-gradient(-45deg, rgb(3 105 161), rgb(56 189 248), rgb(51 65 85), rgb(15 23 42));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
