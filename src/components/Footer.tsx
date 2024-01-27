@@ -22,7 +22,7 @@ export const Footer = () => {
                 width: 'fit-content'
             }}>
             <Box>  
-                {socials.map( ( social ) => (   
+                {socials.map(( social ) => (   
                     <Link 
                         key={social.title}
                         href={social.url}

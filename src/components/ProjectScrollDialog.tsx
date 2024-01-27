@@ -36,8 +36,8 @@ export const ProjectScrollDialog: React.FunctionComponent<MyDialogProps> = ({ op
                 </DialogContentText>
             </DialogContent>
             <DialogActions>
-                <Button onClick={handleClose}>Close</Button>
-                <Button onClick={handleClose}>Open Project</Button>
+                <Button onClick={handleClose} variant="contained" disableRipple disableElevation>Open Project</Button>
+                <Button onClick={handleClose} color="secondary" variant="outlined" disableRipple disableElevation>Close</Button>
             </DialogActions>
         </Dialog>
     );
