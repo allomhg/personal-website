@@ -14,16 +14,16 @@ const socials = [
 
 export const Footer = () => {
     return (
-        <Container 
-            component='footer' 
-            sx={{ 
-                position: 'fixed', 
-                bottom: 0, 
+        <Container
+            component='footer'
+            sx={{
+                position: 'fixed',
+                bottom: 0,
                 width: 'fit-content'
             }}>
-            <Box>  
-                {socials.map(( social ) => (   
-                    <Link 
+            <Box>
+                {socials.map(( social ) => (
+                    <Link
                         key={social.title}
                         href={social.url}
                     >
@@ -33,7 +33,7 @@ export const Footer = () => {
                     </Link>
                 ))}
             </Box>
-            <Typography color="text.secondary">Made by Harry Allom</Typography>
+            <Typography color="text.secondary">Made by Harry Allom with React and MUI</Typography>
         </Container>
     );
 }

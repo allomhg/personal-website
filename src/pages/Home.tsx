@@ -47,8 +47,8 @@ export const Home = () => {
                     width: { xs: "80%" },
                     borderRadius: 2,
                 }}
-                src="https://source.unsplash.com/random?wallpapers"
-                alt="greeting image"
+                src="/assets/camping.png"
+                alt="Greeting Image - Camping"
             />
         </Container>
     );
