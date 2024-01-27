@@ -2,7 +2,7 @@
 // import { Typography } from "@mui/material";
 import { ProjectHeader } from "../components/ProjectHeader";
 import { ProjectCardGrid } from "../components/ProjectCardGrid";
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 
 export const Projects = () => {
     return (   
