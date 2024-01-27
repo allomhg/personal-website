@@ -44,8 +44,10 @@ export const Home = () => {
             <Box
                 component="img"
                 sx={{
+                    maxWidth: "528px",
                     width: { xs: "80%" },
                     borderRadius: 2,
+                    boxShadow: 8,
                 }}
                 src="/assets/camping.png"
                 alt="Greeting Image - Camping"
