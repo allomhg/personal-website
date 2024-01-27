@@ -33,7 +33,7 @@ export const Footer = () => {
                     </Link>
                 ))}
             </Box>
-            <Typography color="text.secondary">Made by Harry Allom with React and MUI</Typography>
+            <Typography color="text.secondary">Made by Harry Allom with React and Material UI</Typography>
         </Container>
     );
 }

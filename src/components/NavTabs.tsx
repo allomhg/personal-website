@@ -61,11 +61,11 @@ export const NavTabs = () => {
     return (
         <Box
             sx={{
+                width: "100vw",
+                display: "flex",
                 position: "fixed",
-                width: "100%",
-                // bgcolor: "background.paper",
-                // borderBottom: "solid red",
-                // background: "paper"
+                justifyContent: "center",
+                bgcolor: "background.paper",
             }}
         >
             <Tabs value={value} onChange={handleChange} aria-label="nav tabs">
