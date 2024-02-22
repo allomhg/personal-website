@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import { Footer } from "../components/Footer";
 
 const greeting = {
     greet: "Hello, I'm Harry",
@@ -9,49 +10,52 @@ const greeting = {
 
 export const Home = () => {
     return (
-        <Container
-            sx={{
-                height: "100vh",
-                width: "80%",
-                display: "flex",
-                flexDirection: { md: "row", xs: "column-reverse" },
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "3rem",
-            }}
-        >
-            <Box
+        <>
+            <Container
                 sx={{
-                    maxWidth: { md: "50%", xs: "100%" },
+                    height: "100vh",
+                    width: "80%",
+                    display: "flex",
+                    flexDirection: { md: "row", xs: "column-reverse" },
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "3rem",
                 }}
             >
-                <Typography
-                    variant="h2"
-                    color="text.primary"
-                    textAlign={{ md: "start", xs: "center" }}
+                <Box
+                    sx={{
+                        maxWidth: { md: "50%", xs: "100%" },
+                    }}
                 >
-                    {greeting.greet}
-                </Typography>
-                <Typography
-                    component="p"
-                    variant="h6"
-                    color="text.secondary"
-                    textAlign={{ md: "start", xs: "center" }}
-                >
-                    {greeting.description}
-                </Typography>
-            </Box>
-            <Box
-                component="img"
-                sx={{
-                    maxWidth: "528px",
-                    width: { xs: "80%" },
-                    borderRadius: 2,
-                    boxShadow: 8,
-                }}
-                src="/assets/camping.png"
-                alt="Greeting Image - Camping"
-            />
-        </Container>
+                    <Typography
+                        variant="h2"
+                        color="text.primary"
+                        textAlign={{ md: "start", xs: "center" }}
+                    >
+                        {greeting.greet}
+                    </Typography>
+                    <Typography
+                        component="p"
+                        variant="h6"
+                        color="text.secondary"
+                        textAlign={{ md: "start", xs: "center" }}
+                    >
+                        {greeting.description}
+                    </Typography>
+                </Box>
+                <Box
+                    component="img"
+                    sx={{
+                        maxWidth: "528px",
+                        width: { xs: "80%" },
+                        borderRadius: 2,
+                        boxShadow: 8,
+                    }}
+                    src="/assets/camping.png"
+                    alt="Greeting Image - Camping"
+                />
+            </Container>
+            <Footer />
+        </>
     );
 };

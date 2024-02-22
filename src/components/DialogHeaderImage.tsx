@@ -2,13 +2,13 @@ import Box from "@mui/material/Box";
 
 export const DialogHeaderImage = () => {
     return (
-        <Box 
+        <Box
             component="img"
             alignSelf="center"
-            sx={{ 
+            sx={{
                 display: "flex",
                 height: "auto",
-                bgcolor: "orange", 
+                bgcolor: "orange",
                 // borderRadius: "16px",
                 maxWidth: "100%",
                 borderRadius: 1,

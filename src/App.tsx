@@ -4,7 +4,7 @@ import { Projects } from "./pages/Projects";
 import { About } from "./pages/About";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { NavTabs } from "./components/NavTabs";
-import { Footer } from "./components/Footer";
+// import { Footer } from "./components/Footer";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import { deepOrange } from "@mui/material/colors";
@@ -40,7 +40,6 @@ function App() {
             <Route path="/Projects" element={<Projects />} />
             <Route path="/About" element={<About />} />
           </Routes>
-          <Footer />
         </Router>
       </ThemeProvider>
     </>
