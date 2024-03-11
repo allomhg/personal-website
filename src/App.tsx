@@ -36,9 +36,9 @@ function App() {
           <NavTabs />
           <Routes>
             <Route path="/" index element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </ThemeProvider>

@@ -4,13 +4,13 @@ import Typography from '@mui/material/Typography';
 export const AboutImage = () => {
     return (
         <>
-            <Box 
+            <Box
                 component="img"
                 alignSelf="center"
-                sx={{ 
+                sx={{
                     display: "flex",
                     height: "auto",
-                    bgcolor: "orange", 
+                    bgcolor: "orange",
                     borderRadius: 2,
                     maxWidth: "50%",
                     my: 5
@@ -18,7 +18,7 @@ export const AboutImage = () => {
                 src="https://source.unsplash.com/random?wallpapers"
                 alt="about image"
             />
-            <Typography 
+            <Typography
                 color="text.primary"
                 variant="h6"
                 component="p"
@@ -26,12 +26,10 @@ export const AboutImage = () => {
                 mb="1rem"
                 paragraph
             >
-                I started my web development journey in the first quarter of 2022 with freeCodeCamp while still living in New Zealand. 
-                I picked it back up in September 2022 with Coursera after traveling around Europe for 3 months and moving to the United Kingdom. 
-                Once again, I had to put it on the back burner after relocating and starting a new job in December. 
-                However, I have since picked web development back up and have been slowly but steadily building my skills in my spare time.
+                I started my web development journey in the first quarter of 2022 with freeCodeCamp while still living in New Zealand.
+                In Q4 of 2022 I moved to the United Kingdom after travelling around Europe for 3 months.
             </Typography>
-            <Typography 
+            <Typography
                 color="text.primary"
                 variant="h6"
                 component="p"

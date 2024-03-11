@@ -49,17 +49,17 @@ const contentList: ContentList[] = [
 
 export const About = () => {
     return (
-        <Container 
-            sx={{ 
-                display: "flex", 
+        <Container
+            sx={{
+                display: "flex",
                 flexDirection: "column",
                 width: "80%",
                 pt: "2rem",
             }}
         >
             <AboutImage/>
-            <Box 
-                pb="3rem" 
+            <Box
+                pb="3rem"
                 // bgcolor={"red"}
             >
                 {contentList.map(( content ) => (
